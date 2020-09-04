@@ -30,7 +30,7 @@ else:
   rval = False
 # main loop
 while rval: # infinite loop until rval = false
-  cv2.imshow("preview", frame)
+  cv2.imshow("anonymizer", frame)
   # read image from camera
   rval, frame = vc.read()
   key = cv2.waitKey(20)
@@ -78,7 +78,4 @@ while rval: # infinite loop until rval = false
       
       # store the blurred face in the output image
       frame[startY:endY, startX:endX] = face
-  
-  # show the output frame
-  cv2.imshow("Frame", frame)
 cv2.destroyWindow("preview")
