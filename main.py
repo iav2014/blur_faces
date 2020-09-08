@@ -21,7 +21,7 @@ g_confidence = 0.5
 method = "pixelated" # simple or pixelated
 blocks = 6 # if pixelated, say blocks number, more block number = mode definition = bad blur result
 
-cv2.namedWindow("preview")
+#cv2.namedWindow("preview")
 vc = cv2.VideoCapture(0)
 
 if vc.isOpened():  # try to get the first frame
